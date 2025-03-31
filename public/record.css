@@ -1,0 +1,147 @@
+body{
+    background-color: #d3d8c3;
+}
+h1{
+    display: grid;
+    color: #3f4e3d;
+    justify-content: center;
+    font-size: 500%;
+}
+.middle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #8c927a;
+    margin: auto;
+    width: 80%;
+    padding: 50px;
+    border-radius: 6px;
+    border: solid 5px #3f4e3d;
+    box-sizing: border-box;
+}
+
+.middle {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    width: 100%;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+.fish {
+    background-color: #d3d8c3;
+    padding: 15px;
+    border-radius: 6px;
+    border: solid 5px #3f4e3d;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.cards h2, .cards p {
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #f1f2eb;
+    border-radius: 6px;
+    border: solid 3px #3f4e3d;
+    text-align: center;
+    font-size: xx-large;
+    color: #3f4e3d;
+    transition: transform 0.2s ease-in-out;
+}
+
+.cards h2:hover, .cards p:hover {
+    transform: scale(1.25);
+    background-color: #d3d8c3;
+    color: #3f4e3d;
+}
+
+
+.middle-container img {
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    border: solid 5px #3f4e3d;
+    border-radius: 6px;
+}
+
+.bass {
+    background-color: #3f4e3d;
+    padding: 10px;
+    color: #d3d8c3;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: left;
+    transition: background-color 0.25s, color 0.25s;
+}
+
+.bass input[type="radio"] {
+    display: none;
+}
+
+.bass input[type="radio"]:checked + label {
+    background-color: #d3d8c3;
+    color: #3f4e3d;
+    font-weight: bold;
+    border: solid 2px #3f4e3d;
+    border-radius: 4px;
+}
+
+.bass label {
+    flex-grow: 1;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+    transition: background-color 0.25s, color 0.25s;
+}
+
+
+.text, .submit {
+    border-radius: 10px;
+    color: #d3d8c3;
+    outline: 2px solid #3f4e3d;
+    border: 0;
+    background-color: #3f4e3d;
+    padding: 10px 1rem;
+    transition: 0.25s;
+}
+.text:hover, .submit:hover {
+    background-color: #d3d8c3;
+    color: #3f4e3d;
+}
+@media (max-width: 768px) {
+    .middle-container {
+      width: 95%;
+      padding: 20px;
+    }
+    .middle {
+      flex-direction: column;
+      padding: 10px;
+    }
+    .fish {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .cards h2, .cards p {
+      font-size: large;
+      padding: 10px;
+    }
+    .middle-container img {
+      width: 100%;
+      max-width: 100%;
+    }
+    .bass {
+      flex-direction: column;
+      padding: 5px;
+    }
+    .text, .submit {
+      font-size: small;
+      padding: 5px;
+    }
+  }
+  

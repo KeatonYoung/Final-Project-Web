@@ -1,0 +1,45 @@
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #8c927a;
+    border: solid 5px #3f4e3d;
+    border-radius: 6px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 65%;
+}
+
+footer a {
+    color: #d3d8c3;
+    text-decoration: none;
+    font-size: 200%;
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    font-size: 250%;
+    transform: scale(1.2);
+}
+@media (max-width: 768px) {
+    footer {
+      flex-direction: column;
+      gap: 10px;
+      padding: 15px;
+      margin: 10px auto;
+      width: 95%;
+    }
+  
+    footer a {
+      font-size: 150%;
+    }
+  
+    footer a:hover {
+      font-size: 175%;
+    }
+  }
+  

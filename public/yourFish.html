@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="images/fishIcon.png" sizes="512x512">
+        <link rel="stylesheet" href="navBar.css">
+        <link rel="stylesheet" href="record.css">
+        <link rel="stylesheet" href="footer.css">
+
+        <title>Bass Records</title>
+        
+    </head>
+    
+    <header> 
+        <nav>
+            <ul class="navBar">
+                <li><a href="/index" >BASS</a></li>
+                <li><a href="/funFacts" >Fun Facts</a></li>
+                <li><a href="/yourFish" >Bass Records</a></li>
+                <li style="float: right; padding-right: 10px;"><img src="images/fishIcon.png" sizes="512x512" alt="fish" style="width: 45px; height: 45px;"></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        
+        <body>
+            <h1>Record Fish</h1>
+            <div class="middle-container">
+
+                <div class="middle">
+                    <form class="fish" id="fish" onsubmit="return bassRecord()">
+                        <div class="bass">
+                            <input type="radio" id="bass1" name="bass" value="largemouth">
+                            <label for="bass1">Largemouth</label>
+                        </div>
+                        <div class="bass">
+                            <input type="radio" id="bass2" name="bass" value="smallmouth">
+                            <label for="bass2">Smallmouth</label>
+                        </div>
+            
+                        <label for="state">State:</label>
+                        <input class="text" type="text" id="state" name="state"><br><br>
+                        <input class="submit" type="submit" value="Submit">
+                    </form>
+            
+                    <div class="cards" id="output">
+                    </div>
+                </div>
+            
+                <img src="https://www.portablepress.com/wp-content/uploads/2016/07/Fotolia_69681955_Subscription_Monthly_M-1-1024x656.jpg" alt="Bass Image">
+            </div>
+            
+        </body>
+        <script src="bass.js"></script>
+
+
+    </main>
+    <footer>
+        <a href="mailto://keatony03@gmail.com">Keatons Email</a>
+        <a href="https://www.wired2fish.com/bass-fishing/how-to-catch-bass-easy-bass-fishing-tips">Wired2Fish</a>
+        <a href="https://www.bassresource.com/beginner/beginning_bass_fishing.html">Bass Resource</a>
+        <a href="https://www.bassmaster.com/">BassMaster</a>
+    </footer>
+</html>
